@@ -17,7 +17,7 @@ setup(
     install_requires=[
         "rich",
         "requests",
-        "OpenAIAuth=0.2.0",
+        "OpenAIAuth==0.2.0",
         "typing-extensions"
     ],
     classifiers=[
