@@ -269,7 +269,7 @@ class ChatBot:
             if self.config["proxy"] != "":
                 use_proxy = True
                 proxy = self.config["proxy"]
-        auth = OpenAIAuth(email, password, use_proxy, proxy, debug=self.debug)
+        auth = OpenAIAuth(email, password, use_proxy, proxy) #debug=self.debug)
         try:
             auth.begin()
         except Exception as exc:
