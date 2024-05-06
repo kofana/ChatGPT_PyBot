@@ -17,7 +17,8 @@ setup(
     install_requires=[
         "rich",
         "requests",
-        "OpenAIAuth"
+        "OpenAIAuth",
+        "typing-extensions"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
