@@ -6,9 +6,9 @@ import os
 import uuid
 from rich.console import Console
 from rich.markdown import Markdown
-#from OpenAIAuth.OpenAIAuth import OpenAIAuth, Debugger
-from OpenAIAuth import Debugger
-from OpenAIAuth import Auth0 as OpenAIAuth
+from OpenAIAuth.OpenAIAuth import OpenAIAuth, Debugger
+#from OpenAIAuth import Debugger
+#from OpenAIAuth import Auth0 as OpenAIAuth
 
 
 console = Console()
