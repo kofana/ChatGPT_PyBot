@@ -6,9 +6,8 @@ import os
 import uuid
 from rich.console import Console
 from rich.markdown import Markdown
-from OpenAIAuth.OpenAIAuth import OpenAIAuth, Debugger
-#from OpenAIAuth import Debugger
-#from OpenAIAuth import Auth0 as OpenAIAuth
+#from OpenAIAuth.OpenAIAuth import OpenAIAuth, Debugger
+from OpenAIAuth import Auth0 as OpenAIAuth
 
 
 console = Console()
@@ -17,6 +16,21 @@ BASE_URL = "https://chat.openai.com/"
 def generate_uuid() -> str:
     uid = str(uuid.uuid4())
     return uid
+
+
+
+class Debugger:
+    def __init__(self, debug: bool = False):
+        if debug:
+            print("Debugger enabled on OpenAIAuth")
+        self.debug = debug
+
+    def set_debug(self, debug: bool):
+        self.debug = debug
+
+    def log(self, message: str, end: str = "\n"):
+        if self.debug:
+            print(message, end=end)
 
 
 class ChatBot:
